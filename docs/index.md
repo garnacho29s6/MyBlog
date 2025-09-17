@@ -1,8 +1,15 @@
 ---
 layout: home
-title: "Chào mừng đến với blog của tôi"
+title: "Trang chủ blog"
 ---
 
-# 📚 Các bài viết gần đây
+# 📚 Danh sách bài viết
 
-Chào bạn! Đây là blog cá nhân mình chia sẻ kiến thức bảo mật, lập trình, v.v.
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <small>— {{ post.date | date: "%d/%m/%Y" }}</small>
+    </li>
+  {% endfor %}
+</ul>
