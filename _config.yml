@@ -1,0 +1,5 @@
+title: My Blog
+description: Blog Markdown cá nhân
+theme: minima
+markdown: kramdown
+baseurl: ""  # Để trống nếu dùng GitHub Pages với docs/
